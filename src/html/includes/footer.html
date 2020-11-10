@@ -1,0 +1,160 @@
+<footer class="bg-darkGrey py-12 lg:pt-14 lg:pb-8 text-white">
+  <div class="container">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-12">
+      <div class="lg:col-span-3 flex flex-col">
+        <a
+          href="/"
+          class="text-white hover:text-orange transition-colors duration-300 block mb-8"
+        >
+          <svg width="197" height="60" class="fill-current">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
+
+        <div class="lg:mt-auto">
+          <p class="mb-3 font-semibold">Зв’язатися з нами</p>
+          <form action="" class="flex items-center">
+            <input
+              type="email"
+              class="block w-full h-8 px-3 text-grey rounded-lg outline-none"
+              placeholder="Email"
+            />
+            <button type="submit" class="-ml-6 mt-1">
+              <svg width="18" height="18" class="fill-current">
+                <use xlink:href="#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <nav class="lg:col-span-2 lg:col-start-5">
+        <a
+          href="/"
+          class="font-semibold text-white hover:text-orange transition-colors duration-300 mb-4 block"
+          >Головна</a
+        >
+        <a
+          href="/"
+          class="font-semibold text-white hover:text-orange transition-colors duration-300 mb-4 block"
+          >Продукція</a
+        >
+        <a
+          href="/"
+          class="font-semibold text-white hover:text-orange transition-colors duration-300 mb-4 block"
+          >Доставка</a
+        >
+        <a
+          href="/"
+          class="font-semibold text-white hover:text-orange transition-colors duration-300 mb-4 block"
+          >Документи</a
+        >
+        <a
+          href="/"
+          class="font-semibold text-white hover:text-orange transition-colors duration-300 block"
+          >Контакти</a
+        >
+      </nav>
+      <div class="lg:col-span-5 lg:col-start-8">
+        <a
+          href="#"
+          class="flex items-center text-white hover:text-orange transition-colors duration-300 mb-6 relative"
+        >
+          <svg
+            width="30"
+            height="22"
+            class="fill-current absolute top-1/2 transform -translate-y-1/2 left-0"
+          >
+            <use xlink:href="#mail"></use>
+          </svg>
+          <span class="pl-12">commerce@shgk.ua</span>
+        </a>
+        <a
+          href="#"
+          class="flex items-center text-white hover:text-orange transition-colors duration-300 mb-6 relative"
+        >
+          <svg
+            width="26"
+            height="26"
+            class="fill-current absolute top-1/2 transform -translate-y-1/2 left-0"
+          >
+            <use xlink:href="#phone"></use>
+          </svg>
+          <span class="pl-12">(067) 128-80-40</span>
+        </a>
+        <p
+          class="flex items-center text-white hover:text-orange transition-colors duration-300 relative"
+        >
+          <svg
+            width="27"
+            height="27"
+            class="fill-current absolute top-1/2 transform -translate-y-1/2 left-0"
+          >
+            <use xlink:href="#pin"></use>
+          </svg>
+          <span class="pl-12"
+            >Київська обл., Сквирский р-н, с.Шамраївка, вул. Центральна, 5
+          </span>
+        </p>
+      </div>
+    </div>
+    <p class="text-sm text-center mt-10">
+      © 2020. Шамраївський гранітний кар’єр
+    </p>
+  </div>
+</footer>
+
+<div id="modal-order" class="modal modal--order">
+  <button
+    class="absolute transform lg:hover:rotate-180 lg:hover:scale-125 transition-transform duration-300 top-4 right-4 lg:top-14 lg:right-14 js-modal-close"
+  >
+    <svg width="26" height="28" class="fill-current">
+      <use xlink:href="#close"></use>
+    </svg>
+  </button>
+
+  <p class="font-bold text-2xl mb-6">
+    Замовити <span class="js-order-type">відсів</span>
+  </p>
+
+  <form action="">
+    <label for="order-name" class="block mb-2">Ваше ім’я*</label>
+    <input
+      type="text"
+      id="order-name"
+      class="mb-4 block w-full h-10 rounded-md bg-lightGrey outline-none px-3"
+    />
+    <label for="order-phone" class="block mb-2">Телефон*</label>
+    <input
+      type="text"
+      id="order-phone"
+      class="mb-4 block w-full h-10 rounded-md bg-lightGrey outline-none px-3"
+    />
+    <label for="order-email" class="block mb-2">Email</label>
+    <input
+      type="text"
+      id="order-email"
+      class="mb-4 block w-full h-10 rounded-md bg-lightGrey outline-none px-3"
+    />
+    <label for="order-volume" class="block mb-2">Об’єм, тонн*</label>
+    <input
+      type="text"
+      id="order-volume"
+      class="mb-4 block w-full h-10 rounded-md bg-lightGrey outline-none px-3"
+    />
+    <label for="order-address" class="block mb-2">Адреса доставки*</label>
+    <input
+      type="text"
+      id="order-address"
+      class="mb-4 block w-full h-10 rounded-md bg-lightGrey outline-none px-3"
+    />
+
+    <input hidden name="order-type" value="" class="js-type-input" />
+    <button
+      type="submit"
+      class="bg-orange w-full py-4 text-lg font-semibold rounded-xl mt-4"
+    >
+      Замовити
+    </button>
+  </form>
+</div>
+<div class="modal-bg js-modal-bg js-modal-close"></div>

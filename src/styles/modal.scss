@@ -1,0 +1,76 @@
+.modal {
+  position: fixed;
+  //   left: 50%;
+  //   top: 50%;
+  //   transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #fff;
+  opacity: 1;
+  pointer-events: none;
+  transition: transform 0.5s;
+  width: calc(100% - 20px);
+  //   padding: 36px 13px 44px;
+
+  @screen md {
+    // // width: 700px;
+    // padding: 90px 75px;
+    // width: 95%;
+    // max-width: 1280px;
+  }
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.modal--order {
+  top: 50%;
+  left: 50%;
+  transform: translate(150%, -50%);
+  padding: 32px 16px;
+  border-radius: 8px;
+  max-height: 450px;
+  overflow-y: auto;
+
+  &.is-open {
+    // opacity: 1;
+    // pointer-events: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  @screen md {
+    border-radius: unset;
+    max-height: unset;
+    overflow-y: unset;
+    top: 0;
+    left: auto;
+    right: 0;
+    padding: 115px 70px 0 55px;
+    width: 450px;
+    height: 100vh;
+    transform: translateX(100%);
+
+    &.is-open {
+      transform: translateX(0);
+    }
+  }
+}
+
+.modal-bg {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(126, 126, 126, 0.67);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+
+  &.is-open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

@@ -1,0 +1,131 @@
+.fraction-description {
+  background: #c4c4c4;
+  border-radius: 5px;
+  padding: 16px;
+  position: relative;
+  min-width: 200px;
+  transition: all 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18px;
+    height: 18px;
+    background: #c4c4c4;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &:last-of-type {
+    min-width: 230px;
+  }
+
+  margin-right: 10px;
+
+  @screen lg {
+    margin-right: unset;
+  }
+}
+
+.fractions-line {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 5px;
+    width: 250%;
+    transform: translateY(-50%);
+    background: #c4c4c4;
+    z-index: -1;
+  }
+
+  @screen lg {
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+.fraction-block {
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 43px;
+  transition: all 0.3s;
+
+  &:hover,
+  &.is-active {
+    background: #f9b130;
+    border: 1px solid #f9b130;
+  }
+
+  &:first-of-type {
+    margin-left: 50px;
+  }
+
+  &:last-of-type {
+    margin-right: 50px;
+  }
+
+  margin-right: 40px;
+
+  @screen lg {
+    margin-right: unset;
+  }
+}
+
+.fraction-container {
+  &.hover-1 {
+    .fraction-description--1 {
+      color: #fff;
+      background: #3f3f3f;
+
+      &::before {
+        background: #3f3f3f;
+      }
+    }
+  }
+
+  &.hover-23 {
+    .fraction-description--2,
+    .fraction-description--3 {
+      color: #fff;
+      background: #3f3f3f;
+
+      &::before {
+        background: #3f3f3f;
+      }
+    }
+  }
+
+  &.hover-3 {
+    .fraction-description--3 {
+      color: #fff;
+      background: #3f3f3f;
+
+      &::before {
+        background: #3f3f3f;
+      }
+    }
+  }
+
+  &.hover-4 {
+    .fraction-description--4 {
+      color: #fff;
+      background: #3f3f3f;
+
+      &::before {
+        background: #3f3f3f;
+      }
+    }
+  }
+}

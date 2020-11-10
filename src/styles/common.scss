@@ -1,0 +1,117 @@
+html {
+  @apply font-proxima text-grey text-base;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+// .js-visible {
+//   @screen md {
+//     transition: all 0.65s;
+
+//     &:not(.is-visible) {
+//       transform: translateY(30px);
+//       opacity: 0;
+//     }
+//   }
+// }
+
+strong {
+  @apply font-bold;
+}
+
+.text-block {
+  * + * {
+    margin-top: 0.75rem;
+  }
+
+  h3,
+  h4 {
+    @apply font-semibold text-2xl;
+  }
+
+  h3 {
+    @apply text-center;
+  }
+
+  p,
+  li {
+    @apply text-base text-grey;
+  }
+
+  ol {
+    @apply list-decimal list-inside;
+  }
+
+  ul {
+    margin-top: 1rem;
+  }
+
+  ul > li {
+    position: relative;
+    margin-top: unset;
+    padding-left: 21px;
+    margin-bottom: 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #333333;
+    }
+  }
+
+  @screen lg {
+    * + * {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.button-grey {
+  width: 195px;
+  height: 55px;
+  border-radius: 10px;
+
+  @apply bg-darkGrey flex items-center justify-center text-white text-lg font-semibold;
+}
+
+button,
+a {
+  outline: none !important;
+}
+
+.list {
+  counter-reset: list-number;
+
+  p {
+    position: relative;
+    padding-left: 37px;
+    margin-bottom: 12px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      counter-increment: list-number;
+      content: counter(list-number);
+      margin-right: 10px;
+      margin-bottom: 10px;
+      width: 23px;
+      height: 23px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      background: #f9b130;
+      border-radius: 50%;
+      color: #000;
+    }
+  }
+}

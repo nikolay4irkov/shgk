@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <body class="">
+    <header
+      class="is-white bg-white lg:bg-transparent lg:px-10 lg:pt-6 fixed lg:absolute w-full header js-header z-30 border-b border-black lg:border-none border-opacity-25"
+    >
+      <div class="header-wrapper flex justify-between items-center">
+        <a href="/" class="flex ml-4 lg:ml-0">
+          <img src="/images/logo-small.svg" class="w-16 lg:w-auto" />
+          <span class="hidden lg:block logo-title"
+            >Шамраївський<br />
+            гранітний<br />
+            кар’єр</span
+          >
+        </a>
+
+        <nav class="nav lg:ml-auto lg:mr-10">
+          <a href="products.html" class="nav-link">Продукція</a>
+          <a href="shipping.html" class="nav-link">Доставка</a>
+          <a href="documents.html" class="nav-link">Документи</a>
+          <a href="contacts.html" class="nav-link">Контакти</a>
+          <a href="tel:+380671288040" class="nav-link">(067) 128-80-40</a>
+        </nav>
+
+        <div class="items-center justify-center lg:justify-start social-links">
+          <a href="#" class="flex items-center mr-6 lg:mr-10 social-link">
+            <svg width="18" height="18" class="fill-current mr-2">
+              <use xlink:href="#viber"></use>
+            </svg>
+            Viber
+          </a>
+          <a href="#" class="flex items-center social-link">
+            <svg width="14" height="15" class="fill-current mr-2">
+              <use xlink:href="#telegram"></use>
+            </svg>
+            Telegram
+          </a>
+        </div>
+
+        <button class="nav-toggler js-burger mr-4 lg:mr-0">
+          <span class="nav-toggler__line"></span>
+          <span class="nav-toggler__line"></span>
+          <span class="nav-toggler__line"></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        id="hero"
+        class="relative h-auto lg:h-screen lg:flex items-center justify-center"
+      >
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50">
+          <img
+            src="/images/banner-bg.png"
+            class="w-full h-full object-cover absolute -z-20"
+          />
+        </div>
+
+        <div class="container relative z-10">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between pt-24 pb-16 lg:pb-0 lg:pt-10"
+          >
+            <div class="text-white lg:w-6/12 mb-10 lg:mb-0">
+              <h1 class="font-extrabold text-3xl lg:text-6xl">
+                Добуваємо<br />
+                та реалізуємо щебінь
+              </h1>
+              <p class="font-semibold text-2xl lg:text-4xl">
+                Доставляємо по Україні
+              </p>
+            </div>
+
+            <div class="relative lg:w-5/12 lg:max-w-xs">
+              <form
+                action=""
+                class="bg-orange text-center rounded-5xl p-6 lg:py-10 lg:px-8 transition-opacity duration-300 form-hero js-form"
+              >
+                <p class="text-white font-bold text-2xl mb-4">
+                  Замовити щебінь
+                </p>
+                <input
+                  type="text"
+                  placeholder="Ваше ім’я"
+                  class="block w-full h-10 px-2 rounded-lg mb-4 outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Телефон"
+                  class="block w-full h-10 px-2 rounded-lg mb-4 outline-none"
+                />
+                <select
+                  name=""
+                  id=""
+                  class="block w-full h-10 px-2 rounded-lg mb-4 outline-none"
+                >
+                  <option disabled selected>Фракція</option>
+                  <option>Відсів</option>
+                  <option>Щебінь фракції 5-10</option>
+                  <option>Щебінь фракції 10-20</option>
+                </select>
+                <input
+                  type="text"
+                  placeholder="Об’єм, тонн"
+                  class="block w-full h-10 px-2 rounded-lg mb-4 outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Адреса доставки"
+                  class="block w-full h-10 px-2 rounded-lg mb-4 outline-none"
+                />
+                <button type="submit" class="button-grey mx-auto">
+                  Надіслати
+                </button>
+              </form>
+              <div
+                class="bg-orange rounded-5xl py-12 px-10 absolute top-0 left-0 transition-opacity duration-300 thanks-block"
+              >
+                <svg width="31" height="31" class="fill-current mx-auto mb-6">
+                  <use xlink:href="#check"></use>
+                </svg>
+                <p class="font-bold text-lg text-center text-white">
+                  Дякуємо за вашу заявку!<br />
+                  Очікуйте на дзвінок нашого менеджера
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20 lg:mb-24">
+        <div class="container">
+          <h3 class="font-bold text-grey text-4xl mb-6 lg:mb-16">Про кар’єр</h3>
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <img
+              src="/images/about.png"
+              class="mb-4 lg:mb-0 lg:w-1/2 object-cover lg:pr-4"
+            />
+            <div class="text-block">
+              <p>
+                Шамраївський гранітний кар'єр розташований в Київській області.
+                Тут в промислових масштабах добувають матеріали з відсіву
+                дроблення, щебінь для будівельних робіт, щебнево-піщані суміші
+                для покриттів і основ автомобільних доріг і аеродромів, щебінь
+                для баластного шару залізничної колії.
+              </p>
+              <p>
+                Власна атестована лабораторія регулярно відбирає проби корисних
+                копалин для контролю якості. Ми суворо стежимо за якістю
+                відвантажених будматеріалів, щоб зведені вами об'єкти служили
+                максимально довго.
+              </p>
+              <p>
+                Наші партнери - великі виробники бетону, тротуарної плитки,
+                будівельні компанії, підприємства дорожньо-будівельної галузі та
+                приватні особи.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <div class="container">
+          <h3 class="font-bold text-grey text-4xl mb-6 lg:mb-16">
+            Карта щебню
+          </h3>
+
+          <div class="overflow-x-auto lg:overflow-visible">
+            <div
+              class="fraction-container flex justify-between items-end mb-12 js-hover-container"
+            >
+              <div class="fraction-description fraction-description--1">
+                <p>Дорожне будівництво</p>
+              </div>
+              <div class="fraction-description fraction-description--2">
+                <p>ФЕМ</p>
+                <p>Тротуарна плитка</p>
+                <p>Ландшафтний дизайн</p>
+                <p>Бетонні вироби</p>
+              </div>
+              <div class="fraction-description fraction-description--3">
+                <p>Товарний бетон</p>
+                <p>Бетонні вироби</p>
+              </div>
+              <div class="fraction-description fraction-description--4">
+                <p>Загальнобудівельні роботи</p>
+                <p>ЖД і дорожнє будівництво</p>
+                <p>Засипка котлованів</p>
+                <p>Формування відсипів</p>
+              </div>
+            </div>
+
+            <div class="fractions-line relative flex justify-between">
+              <div data-item="1" class="fraction-block js-hover-item">
+                <p>Відсів</p>
+              </div>
+              <div data-item="1" class="fraction-block js-hover-item">
+                <p>0-40</p>
+              </div>
+              <div data-item="1" class="fraction-block js-hover-item">
+                <p>0-70</p>
+              </div>
+              <div data-item="23" class="fraction-block js-hover-item">
+                <p>5-10</p>
+              </div>
+              <div data-item="3" class="fraction-block js-hover-item">
+                <p>10-20</p>
+              </div>
+              <div data-item="4" class="fraction-block js-hover-item">
+                <p>20-40</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <div class="container">
+          <h3 class="font-bold text-grey text-4xl mb-6 lg:mb-16">Фракції</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-10 lg:mb-16">
+            <div class="fraction-card group">
+              <a
+                href="product.html"
+                class="block font-bold text-xl text-center text-grey group-hover:text-orange transition-colors duration-300 mb-3 fraction-card__title"
+                >Відсів</a
+              >
+              <div class="relative mb-6">
+                <img
+                  src="/images/fraction-1.png"
+                  class="w-full h-48 lg:h-32 object-cover"
+                />
+                <div class="absolute bottom-0 right-0 bg-orange p-2">
+                  <p>100 грн/т</p>
+                </div>
+              </div>
+              <p class="flex justify-between mb-6">
+                <span>Щільність</span>
+                <span>1,53</span>
+              </p>
+              <button
+                class="bg-orange font-semibold rounded-lg mx-auto block py-2 px-12 w-full lg:w-auto fraction-card__button js-modal-call"
+                data-modal-target="modal-order"
+                data-type="vidsiv"
+              >
+                Замовити
+              </button>
+            </div>
+            <div class="fraction-card group">
+              <a
+                href="product.html"
+                class="block font-bold text-xl text-center text-grey group-hover:text-orange transition-colors duration-300 mb-3 fraction-card__title"
+                >Відсів</a
+              >
+              <div class="relative mb-6">
+                <img
+                  src="/images/fraction-1.png"
+                  class="w-full h-48 lg:h-32 object-cover"
+                />
+                <div class="absolute bottom-0 right-0 bg-orange p-2">
+                  <p>100 грн/т</p>
+                </div>
+              </div>
+              <p class="flex justify-between mb-6">
+                <span>Щільність</span>
+                <span>1,53</span>
+              </p>
+              <button
+                class="bg-orange font-semibold rounded-lg mx-auto block py-2 px-12 w-full lg:w-auto fraction-card__button js-modal-call"
+                data-modal-target="modal-order"
+                data-type="vidsiv"
+              >
+                Замовити
+              </button>
+            </div>
+            <div class="fraction-card group">
+              <a
+                href="product.html"
+                class="block font-bold text-xl text-center text-grey group-hover:text-orange transition-colors duration-300 mb-3 fraction-card__title"
+                >Відсів</a
+              >
+              <div class="relative mb-6">
+                <img
+                  src="/images/fraction-1.png"
+                  class="w-full h-48 lg:h-32 object-cover"
+                />
+                <div class="absolute bottom-0 right-0 bg-orange p-2">
+                  <p>100 грн/т</p>
+                </div>
+              </div>
+              <p class="flex justify-between mb-6">
+                <span>Щільність</span>
+                <span>1,53</span>
+              </p>
+              <button
+                class="bg-orange font-semibold rounded-lg mx-auto block py-2 px-12 w-full lg:w-auto fraction-card__button js-modal-call"
+                data-modal-target="modal-order"
+                data-type="vidsiv"
+              >
+                Замовити
+              </button>
+            </div>
+          </div>
+          <a href="products.html" class="button-grey mx-auto">Всі фракції</a>
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <div class="container">
+          <h3 class="font-bold text-grey text-4xl mb-6 lg:mb-16 uppercase">
+            FAQ
+          </h3>
+          <div class="">
+            <p class="accordion__title js-accordion-title">
+              Яка вартість доставки щебеню в Київ?
+            </p>
+            <p class="accordion__text js-accordion-content">
+              Вартість доставки з Шамраївського кар'єра залежить від адреси
+              доставки, прорахувати ціну доставки щебеню ви можете
+              <a href="shipping.html">тут</a> .
+            </p>
+            <p class="accordion__title js-accordion-title">
+              Чому доставка з кар'єра здійснюється від 30 тонн?
+            </p>
+            <p class="accordion__text js-accordion-content">
+              Вантажопідйомність самоскида становить 30 тонн. Найбільш вигідний
+              варіант - замовляти матеріал з доставкою по 30 тонн
+            </p>
+
+            <p class="accordion__title js-accordion-title">
+              Чи можливий самовивіз щебеню?
+            </p>
+            <p class="accordion__text js-accordion-content">
+              Ви можете самостійно забрати матеріал за адресою Київська обл.,
+              Сквирский р-н, с.Шамраївка, вул. Центральна, 5
+            </p>
+
+            <p class="accordion__title js-accordion-title">
+              Чому ціни на матеріал вказані без доставки?
+            </p>
+            <p class="accordion__text js-accordion-content">
+              Ціни на матеріал вказані без доставки, тому що ціна доставки
+              залежить від відстані та місця розташування об'єкта. Ви можете
+              прорахувати вартість доставки
+              <a href="shipping.html">у нас на сайті</a>, або ж залишити заявку
+              і наші менеджери проконсультують вас.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-orange py-12 lg:py-20">
+        <div class="container">
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <div class="lg:w-4/12 mb-10 lg:mb-0">
+              <h3 class="font-bold text-grey text-4xl mb-6 lg:mb-10">
+                Контакти
+              </h3>
+              <div class="mb-8">
+                <a href="#" class="flex items-center mb-6 relative">
+                  <svg
+                    width="30"
+                    height="22"
+                    class="fill-current absolute top-1/2 transform -translate-y-1/2 left-0"
+                  >
+                    <use xlink:href="#mail"></use>
+                  </svg>
+                  <span class="text-grey pl-12">commerce@shgk.ua</span>
+                </a>
+                <a href="#" class="flex items-center mb-6 relative">
+                  <svg
+                    width="26"
+                    height="26"
+                    class="fill-current absolute top-1/2 transform -translate-y-1/2 left-0"
+                  >
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  <span class="text-grey pl-12">(067) 128-80-40</span>
+                </a>
+                <p class="flex items-center relative">
+                  <svg
+                    width="27"
+                    height="27"
+                    class="fill-current absolute top-1/2 transform -translate-y-1/2 left-0"
+                  >
+                    <use xlink:href="#pin"></use>
+                  </svg>
+                  <span class="text-grey pl-12"
+                    >Київська обл., Сквирский р-н, с.Шамраївка, вул. Центральна,
+                    5
+                  </span>
+                </p>
+              </div>
+
+              <form action="" class="form-contacts">
+                <p class="font-semibold mb-4">
+                  Для зв’язку з нами, заповніть форму
+                </p>
+
+                <input
+                  type="text"
+                  placeholder="Ім’я"
+                  class="block w-full h-8 px-3 rounded-lg mb-5 outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Телефон"
+                  class="block w-full h-8 px-3 rounded-lg mb-5 outline-none"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="block w-full h-8 px-3 rounded-lg mb-5 outline-none"
+                />
+
+                <button
+                  type="submit"
+                  class="w-full h-8 rounded-lg bg-darkGrey text-white text-base font-semibold"
+                >
+                  Надіслати
+                </button>
+              </form>
+            </div>
+            <div class="h-64 lg:h-auto lg:w-8/12 lg:pl-8">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10110.971058922565!2d29.850651871626646!3d49.775661253113604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d3381a55555555%3A0x73b97d369878c2fd!2z0KjQsNC80YDQsNC10LLRgdC60LjQuSDQs9GA0LDQvdC40YLQvdGL0Lkg0LrQsNGA0YzQtdGA!5e0!3m2!1sru!2sua!4v1604848448374!5m2!1sru!2sua"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>

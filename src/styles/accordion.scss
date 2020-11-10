@@ -1,0 +1,56 @@
+.accordion__title {
+  transition: margin 0.3s;
+  position: relative;
+  padding-right: 40px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 2px;
+    background: #333333;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 2px;
+    background: #333333;
+    top: 50%;
+    transform: translateY(-50%) rotate(270deg);
+    transition: 0.3s;
+  }
+
+  &.is-active {
+    margin-bottom: 18px;
+
+    &:after {
+      transform: translateY(-50%) rotate(0);
+    }
+  }
+
+  @apply cursor-pointer text-lg font-semibold mb-8;
+
+  @screen lg {
+    padding-right: unset;
+  }
+}
+
+.accordion__text {
+  @apply mb-5;
+
+  a {
+    color: #f9b130;
+    text-decoration: underline;
+  }
+
+  @screen md {
+    @apply w-10/12;
+  }
+}

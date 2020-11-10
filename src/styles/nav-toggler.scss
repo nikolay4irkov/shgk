@@ -1,0 +1,59 @@
+.nav-toggler {
+  position: relative;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 20px;
+  padding: 0;
+  cursor: pointer;
+  z-index: 20;
+  order: 4;
+  outline: none !important;
+
+  @screen lg {
+    display: none;
+  }
+}
+
+.nav-toggler__line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  background: #2b2831;
+  transition: all 0.3s;
+
+  .nav-toggler.is-active & {
+    background: #2b2831;
+  }
+
+  &:first-child {
+    top: 0;
+
+    .nav-toggler.is-active & {
+      transform: translateY(8px) rotate(45deg) translateX(0);
+    }
+  }
+
+  &:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+
+    .nav-toggler.is-active & {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+  }
+
+  &:last-child {
+    width: 100%;
+    left: auto;
+    right: 0;
+    bottom: 0;
+
+    .nav-toggler.is-active & {
+      width: 100%;
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}

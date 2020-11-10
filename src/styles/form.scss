@@ -1,0 +1,13 @@
+.form-hero {
+  &.is-hidden {
+    opacity: 0;
+  }
+}
+
+.thanks-block {
+  opacity: 0;
+
+  &.is-active {
+    opacity: 1;
+  }
+}

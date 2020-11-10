@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <body class="">
+    <%= require('./../includes/header.html').default %>
+    <main>
+      <section class="pt-28 pb-16 lg:pt-48 lg:pb-40">
+        <div class="container">
+          <div class="flex flex-col lg:flex-row lg:justify-between">
+            <div class="lg:w-4/12 mb-10 lg:mb-0">
+              <h3 class="font-bold text-grey text-4xl mb-6 lg:mb-10">
+                Контакти
+              </h3>
+              <div class="mb-8">
+                <a href="#" class="flex items-center mb-6 relative">
+                  <svg
+                    width="30"
+                    height="22"
+                    class="fill-current text-orange absolute top-1/2 transform -translate-y-1/2 left-0"
+                  >
+                    <use xlink:href="#mail"></use>
+                  </svg>
+                  <span class="text-grey pl-12">commerce@shgk.ua</span>
+                </a>
+                <a href="#" class="flex items-center mb-6 relative">
+                  <svg
+                    width="26"
+                    height="26"
+                    class="fill-current text-orange absolute top-1/2 transform -translate-y-1/2 left-0"
+                  >
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  <span class="text-grey pl-12">(067) 128-80-40</span>
+                </a>
+                <p class="flex items-center relative">
+                  <svg
+                    width="27"
+                    height="27"
+                    class="fill-current text-orange absolute top-1/2 transform -translate-y-1/2 left-0"
+                  >
+                    <use xlink:href="#pin"></use>
+                  </svg>
+                  <span class="text-grey pl-12"
+                    >Київська обл., Сквирский р-н, с.Шамраївка, вул. Центральна,
+                    5
+                  </span>
+                </p>
+              </div>
+
+              <form action="" class="form-contacts">
+                <p class="font-semibold mb-4">
+                  Для зв’язку з нами, заповніть форму
+                </p>
+
+                <input
+                  type="text"
+                  placeholder="Ім’я"
+                  class="block w-full h-8 px-3 rounded-lg mb-5 outline-none bg-lightGrey"
+                />
+                <input
+                  type="text"
+                  placeholder="Телефон"
+                  class="block w-full h-8 px-3 rounded-lg mb-5 outline-none bg-lightGrey"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="block w-full h-8 px-3 rounded-lg mb-5 outline-none bg-lightGrey"
+                />
+
+                <button
+                  type="submit"
+                  class="w-full h-8 rounded-lg bg-orange text-grey text-base font-semibold"
+                >
+                  Надіслати
+                </button>
+              </form>
+            </div>
+            <div class="h-64 lg:h-auto lg:w-8/12 lg:pl-8">
+              <iframe
+                class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10110.971058922565!2d29.850651871626646!3d49.775661253113604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d3381a55555555%3A0x73b97d369878c2fd!2z0KjQsNC80YDQsNC10LLRgdC60LjQuSDQs9GA0LDQvdC40YLQvdGL0Lkg0LrQsNGA0YzQtdGA!5e0!3m2!1sru!2sua!4v1604848448374!5m2!1sru!2sua"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <%= require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>
