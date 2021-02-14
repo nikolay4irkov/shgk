@@ -6,3 +6,4 @@ import "./accordion";
 import "./form-submit";
 import "./modal";
 import "./slider";
+import "./shipping";

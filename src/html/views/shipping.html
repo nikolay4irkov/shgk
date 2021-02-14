@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <%= require('./../includes/header.html').default %>
+    <main>
+      <section class="container pt-28 lg:pt-48 mb-16 lg:mb-32">
+        <h1 class="font-bold text-grey text-4xl mb-6">Доставка</h1>
+
+        <div class="mb-6 relative">
+          <div class="md:absolute md:top-0 md:right-0 w-full md:w-2/6 mb-6">
+            <div class="mb-6">
+              <label for="select" class="block mb-2">Населений пункт</label>
+              <select
+                name=""
+                id="select"
+                class="block w-full border-b border-black pb-1 js-city-select"
+              >
+                <option disabled selected>Обрати</option>
+                <option value="Kyiv">Киев</option>
+                <option value="Kyiv">Киев</option>
+                <option value="Kyiv">Киев</option>
+              </select>
+            </div>
+            <div class="mb-6">
+              <label for="city" class="block">Відстань, км</label>
+              <input
+                type="text"
+                id="city"
+                class="block w-full border-b border-black pb-1 focus:outline-none"
+                readonly
+              />
+            </div>
+            <div>
+              <label for="city" class="block">Відстань, км</label>
+              <input
+                type="text"
+                id="city"
+                class="block w-full border-b border-black pb-1 focus:outline-none"
+                readonly
+              />
+            </div>
+          </div>
+          <img src="/images/map.png" class="w-full js-image" />
+        </div>
+
+        <div class="text-block">
+          <p>
+            Доставка здійснюється по Київській, Житомирській, Черкаській та
+            Вінницькій областях. На нашому сайті ви можете прорахувати вартість
+            доставки щебеню з Шамраївського гранітного кар’єру онлайн.
+          </p>
+          <p>
+            Доставка з кар'єра здійснюється від 30 тонн через те, що
+            вантажопідйомність самоскида становить 30 тонн. Найбільш вигідний
+            варіант - замовити щебень з доставкою по 30 тонн.
+          </p>
+          <p>
+            Ціна продажу щебеню на нашому сайті найвигідніша, серед аналогічних
+            ресурсів. Крім того, у нас ви можете купити щебінь з доставкою по
+            Києву, а також в будь-який регіон і місто України. Купити щебінь в
+            Києві, ціна якого не буде невиправдано високою, можна на нашому
+            ресурсі, замовлення ви можете оформити дуже швидко, прямо на сайті.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <%= require('./../includes/footer.html').default %> <%=
+    require('./../includes/defs.html').default %>
+  </body>
+</html>
