@@ -17,9 +17,13 @@ function sendAjaxSubscribeForm(form, url) {
     data: form.serialize(),
     success: function success() {
       //if it's form in hero section on main page show thanks and hide form
-      if ($form.hasClass("form-hero")) {
+      if (form.hasClass("form-hero")) {
         $formHero.addClass("is-hidden");
         $thanksMessage.addClass("is-active");
+      } else {
+        alert(
+          "Спасибо, ваша заявка получена! Мы свяжемся с вами как можно скорее."
+        );
       }
     },
 

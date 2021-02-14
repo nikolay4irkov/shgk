@@ -12,8 +12,8 @@ $modalCall.on("click", function (e) {
   e.preventDefault();
   let targetedModal = $(this).data("modal-target");
 
-  $orderType.val($(this).data("type"));
-  console.log($orderType.val());
+  $orderType.attr("value", $(this).data("type"));
+  console.log($orderType);
 
   $(`#${targetedModal}`).addClass("is-open");
   $modalBg.addClass("is-open");

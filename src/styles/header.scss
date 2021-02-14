@@ -99,17 +99,19 @@
         width: 100%;
       }
     }
-  }
 
-  .header.is-white & {
-    @apply text-white;
+    .header.is-white & {
+      @apply text-white;
+    }
   }
 }
 
 .social-link {
   @apply font-gilroy font-medium text-base text-grey;
 
-  .header.is-white & {
-    @apply text-white;
+  @screen lg {
+    .header.is-white & {
+      @apply text-white;
+    }
   }
 }
