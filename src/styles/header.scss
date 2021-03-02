@@ -1,5 +1,18 @@
 .header {
-  transition: transform 0.5s;
+  transition: transform 0.5s, background 0.5s;
+  @apply bg-white;
+
+  @media (max-width: 1024px) {
+    background: white !important;
+  }
+
+  &.always-bg-white {
+    @apply bg-white;
+  }
+
+  &.is-white {
+    @apply bg-transparent;
+  }
 
   &.is-hidden {
     transform: translateY(-100%);
@@ -28,11 +41,16 @@
   .header.is-white & {
     @apply text-white;
   }
+
+  .header.always-bg-white & {
+    @apply text-grey;
+  }
 }
 
 .nav {
   display: none;
   padding-left: 20px;
+  padding-right: 20px;
   margin-top: 10px;
   // height: calc(100vh - 200px);
 
@@ -49,6 +67,7 @@
     margin: 0 50px 0 auto;
     display: flex;
     padding-left: unset;
+    padding-right: unset;
     height: unset;
   }
 }
@@ -103,6 +122,10 @@
     .header.is-white & {
       @apply text-white;
     }
+
+    .header.always-bg-white & {
+      @apply text-grey;
+    }
   }
 }
 
@@ -112,6 +135,10 @@
   @screen lg {
     .header.is-white & {
       @apply text-white;
+    }
+
+    .header.always-bg-white & {
+      @apply text-grey;
     }
   }
 }
